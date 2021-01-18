@@ -16,13 +16,13 @@ const SESSION_SECRET = 'Z>lFs46=B)$u(742x5(iEH6k&m';
  *  - DB_QUERY_PARAMS is optional, but if you use cloud service like mongodb.com/cloud,
  *    then the following query params is recommend: '?retryWrites=true&w=majority'
  */
-const CONNECTION_TYPE = "mongodb";
-const DB_USERNAME = "";
-const DB_PASSWORD = "";
-const DB_HOST = "localhost";
-const DB_PORT = "27017";
-const DB_NAME = "express-boilerplate";
-const DB_QUERY_PARAMS = "";
+const CONNECTION_TYPE = 'mongodb';
+const DB_USERNAME = '';
+const DB_PASSWORD = '';
+const DB_HOST = 'localhost';
+const DB_PORT = '27017';
+const DB_NAME = 'milio-msg';
+const DB_QUERY_PARAMS = '';
 
 /**
  * SSL / HTTPS settings
@@ -56,13 +56,11 @@ const SWAGGER_SETTINGS = {
             version: '1.0.0',
         },
         basePath: '/',
-        produces: [
-            "application/json"
-        ],
+        produces: ['application/json'],
         schemes: ['http', 'https'],
     },
     basedir: __dirname, //app absolute path
-    files: ['./routes/**/*.js'] //Path to the API handle folder
+    files: ['./routes/**/*.js'], //Path to the API handle folder
 };
 
 module.exports = {
@@ -79,5 +77,5 @@ module.exports = {
     PRIVATE_KEY_PATH,
     CERTIFICATE_PATH,
     CA_PATH,
-    SWAGGER_SETTINGS
+    SWAGGER_SETTINGS,
 };
